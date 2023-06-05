@@ -46,16 +46,3 @@ button{
     color: green;
     border: 2px solid green;
 }
-@media only screen and (max-width: 600px){
-    html{
-        font-size: 50%; /*1rem = 8px*/
-    }
-}
-@media only screen and (max-width: 400px){
-    html{
-        font-size: 37.5%; /*1rem = 6px*/
-    }
-    .button__section{
-        flex-direction: column;
-    }   
-}
