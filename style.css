@@ -2,7 +2,10 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
-  }
+}
+html{
+    font-size: 62.5%; /*1rem =10px*/
+}
 body{
     display: flex;
     flex-direction: column;
@@ -13,26 +16,26 @@ body{
 }
 .heading{
     text-align: center;
-    font-size: 56px;
-    margin-bottom: 20px;
+    font-size: 5.6rem;
+    margin-bottom: 2rem;
 }
 .number{
     text-align: center;
-    font-size: 96px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    font-size: 9.6rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 .button__section{
-    margin-top: 20px;
+    margin-top: 2rem;
     display: flex;
-    gap: 30px;
+    gap: 3rem;
 }
 button{
-    padding: 5px 10px;
-    font-size: 18px;
+    padding: .5rem 1rem;
+    font-size: 1.8rem;
     font-weight: 500;
     background-color: #fff;
-    border-radius: 5px;
+    border-radius: .5rem;
     cursor: pointer;
 }
 .decrease{
@@ -42,4 +45,17 @@ button{
 .increase{
     color: green;
     border: 2px solid green;
+}
+@media only screen and (max-width: 600px){
+    html{
+        font-size: 50%; /*1rem = 8px*/
+    }
+}
+@media only screen and (max-width: 400px){
+    html{
+        font-size: 37.5%; /*1rem = 6px*/
+    }
+    .button__section{
+        flex-direction: column;
+    }   
 }
